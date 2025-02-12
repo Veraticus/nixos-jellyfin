@@ -15,10 +15,10 @@ in
     inherit pname version;
 
     src = fetchFromGitHub {
-      owner = "jellyfin";
+      owner = "Veraticus";
       repo = pname;
-      rev = "v${version}";
-      hash = "sha256-fXjQ8h//C0Ox5pyyFazpcuVLZibKAbnXcY6OHLI2bDQ=";
+      rev = "d939b71b35edf67dd781d801702b5b213677e8d0";
+      hash = null; # Let Nix compute the hash
     };
 
     propagatedBuildInputs = [
