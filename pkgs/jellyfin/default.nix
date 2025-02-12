@@ -33,8 +33,8 @@ in
       freetype
       jellyfin-ffmpeg
     ];
-    dotnet-sdk = dotnetCorePackages.sdk_8_0;
-    dotnet-runtime = dotnetCorePackages.aspnetcore_8_0;
+    dotnet-sdk = dotnetCorePackages.sdk_9_0;
+    dotnet-runtime = dotnetCorePackages.aspnetcore_9_0;
     dotnetBuildFlags = ["--no-self-contained"];
 
     passthru.updateScript = ./update.sh;
