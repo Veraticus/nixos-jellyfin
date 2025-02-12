@@ -18,7 +18,7 @@ in
       owner = "Veraticus";
       repo = pname;
       rev = "d939b71b35edf67dd781d801702b5b213677e8d0";
-      hash = "sha256-Ue2NkXB4XOqJwCYhqJ3ILGWrRXGDOxwu2ZagDXZKGBo=";
+      hash = "sha256-KSUoNiZ7oaS9XndL2g1vLEqZNs/nuhc2mZnDRCbe32c=";
     };
 
     propagatedBuildInputs = [
