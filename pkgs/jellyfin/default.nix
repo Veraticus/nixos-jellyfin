@@ -18,7 +18,7 @@ in
       owner = "Veraticus";
       repo = pname;
       rev = "d939b71b35edf67dd781d801702b5b213677e8d0";
-      hash = null; # Let Nix compute the hash
+      hash = "sha256-Ue2NkXB4XOqJwCYhqJ3ILGWrRXGDOxwu2ZagDXZKGBo=";
     };
 
     propagatedBuildInputs = [
