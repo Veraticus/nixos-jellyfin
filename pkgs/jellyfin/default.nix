@@ -6,6 +6,7 @@
   fontconfig,
   freetype,
   jellyfin-ffmpeg,
+  jellyfin-web,
   sqlite,
 }: let
   pname = "jellyfin";
@@ -32,10 +33,16 @@ in
       fontconfig
       freetype
       jellyfin-ffmpeg
+      jellyfin-web
     ];
     dotnet-sdk = dotnetCorePackages.sdk_9_0;
     dotnet-runtime = dotnetCorePackages.aspnetcore_9_0;
     dotnetBuildFlags = ["--no-self-contained"];
+
+    postInstall = ''
+      mkdir -p $out/lib/jellyfin/jellyfin-web
+      cp -r ${jellyfin-web}/share/jellyfin-web/* $out/lib/jellyfin/jellyfin-web/
+    '';
 
     passthru.updateScript = ./update.sh;
 
